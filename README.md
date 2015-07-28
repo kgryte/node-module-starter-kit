@@ -44,7 +44,7 @@ The function accepts the following `options`:
 *	__cmd__: command name, if module is a CLI tool.
 *	__repo__: module Github repository.
 *	__license__: module license.
-*	__holder__: copyright holder (the author and copyright holder may be the different people/organizations).
+*	__holder__: copyright holder (the author and copyright holder may be different people/organizations).
 
 ``` javascript
 starter( dir, {
