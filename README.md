@@ -79,6 +79,18 @@ The function accepts the same `options` as the asynchronous version.
 ## Notes
 
 *	The following assets are created...
+	- 	[.gitignore](https://github.com/kgryte/gitignore)
+	- 	[.gitattributes](https://github.com/kgryte/gitattributes)
+	- 	[.editorconfig](https://github.com/kgryte/editorconfig)
+	- 	[.jshintrc](https://github.com/kgryte/jshintrc)
+	- 	[.jshintignore](https://github.com/kgryte/jshintignore)
+	- 	[.npmignore](https://github.com/kgryte/gitignore)
+	- 	[.travis.yml](https://github.com/kgryte/travis-yml)
+	- 	[Makefile](https://github.com/kgryte/makefile)
+	- 	[LICENSE](https://github.com/kgryte/license)
+	- 	[TODO.md](https://github.com/kgryte/todo)
+	- 	[README.md](https://github.com/kgryte/readme)
+	- 	[package.json](https://github.com/kgryte/package-json)
 
 
 
