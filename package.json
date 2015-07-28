@@ -1,0 +1,77 @@
+{
+  "name": "@kgryte/node-module-starter-kit",
+  "version": "0.0.0",
+  "description": "Node module starter kit.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "bin": {
+    "nodemodule": "./bin/cli"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/node-module-starter-kit.git"
+  },
+  "keywords": [
+    "node_module",
+    "starter",
+    "kit",
+    "boilerplate",
+    "cli",
+    "utilities",
+    "utils",
+    "utility",
+    "module",
+    "helper",
+    "generator",
+    "skeleton",
+    "tools"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/node-module-starter-kit/issues"
+  },
+  "dependencies": {
+    "@kgryte/editorconfig": "^1.0.0",
+    "@kgryte/gitattributes": "^1.0.0",
+    "@kgryte/gitignore": "^1.0.0",
+    "@kgryte/jshintignore": "^1.0.0",
+    "@kgryte/jshintrc": "^1.0.0",
+    "@kgryte/license": "^1.0.0",
+    "@kgryte/makefile": "^1.0.0",
+    "@kgryte/noop": "^1.0.0",
+    "@kgryte/npmignore": "^1.0.0",
+    "@kgryte/package-json": "^1.0.1",
+    "@kgryte/readme": "^1.0.3",
+    "@kgryte/todo": "^1.0.0",
+    "@kgryte/travis-yml": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "utils-merge2": "^1.0.0",
+    "validate.io-email-address": "^1.0.0",
+    "validate.io-function": "^1.0.2",
+    "validate.io-object": "^1.0.4",
+    "validate.io-string-array": "^1.0.0",
+    "validate.io-string-primitive": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+{
+	"string": [
+		"name",
+		"description",
+		"author",
+		"email",
+		"keywords",
+		"cmd",
+		"repo",
+		"license",
+		"holder"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"description": [
+			"desc"
+		]
+	}
+}

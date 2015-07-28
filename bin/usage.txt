@@ -1,0 +1,17 @@
+
+Usage: nodemodule [options] [destination]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --name [name]         Module name.
+  -desc  --description [desc]  Module description.
+         --author [author]     Module author.
+         --email [email]       Author email.
+         --keywords [keywords] Keywords describing the module; e.g., word1,word2,...
+         --cmd [cmd]           Command, if module is a CLI tool.
+         --repo [repo]         Module repository.
+         --license [name]      License. Default: 'MIT'.
+         --holder [holder]     Copyright author.
+
