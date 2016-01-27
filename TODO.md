@@ -15,10 +15,7 @@ TODO
 	-	turns on `travis-ci`
 	-	open an editor (default to `subl .`)
 2. create dirs with included files
-	-	module which creates a test `dir` with a stubbed test file
-	- 	ditto for stubbed library file
-	-	ditto for stubbed example file
-	-	ditto for benchmark
+	-	benchmark dir with stubbed benchmark file
 		-	option whether to include a benchmark file (default: `false`)
 3. ability to filter what is created
 	-	e.g., `'Makefile,TODO,packagejson,lib/index.js,lib/validate.js,test/test.js,examples/,...'` etc
@@ -28,7 +25,13 @@ TODO
 4. document a `task` factory `function` and how to manipulate task order
 5. tests
 6. cli snippet
-7. 
+7. tasks are essentially `plugins`
+	- 	`nmsk-plugin-editorconfig`
+	-	`nmsk-plugin-install`
+	-	`nmsk-plugin-open`
+	- 	...
+	-	one problem with such an approach is that dep changes must bubble up through all parents in order for the `starter-kit` to be "up-to-date"
+8. 
 
 
 // TODO: include git remote task
