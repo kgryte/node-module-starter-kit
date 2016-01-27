@@ -35,7 +35,6 @@ TODO
 // TODO: include ci task
 // TODO: include star task
 // TODO: include open task
-// TODO: include npm install task
 
 
 
