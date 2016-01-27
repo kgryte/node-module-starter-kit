@@ -51,7 +51,7 @@ The function accepts the following `options`:
 *	__star__: `boolean` indicating whether to star a remote Github repository. Default: `true`.
 *	__ci__: `boolean` indicating whether to initialize continuous integration. Default: `true`.
 * 	__install__: `boolean` indicating whether to run installation tasks. Default: `true`.
-*	__open__: `boolean` indicating whether to open the module directory in a text editor. Default: `true`. 	
+*	__open__: command to open a destination directory or `false`. Default: `'subl .'`. 	
 *	__silent__: `boolean` indicating whether to silence verbose logging. Default: `false`.
 
 
@@ -148,6 +148,8 @@ Options:
           --repo repo           Module repository.
           --license name        License. Default: 'MIT'.
           --holder holder       Copyright author.
+  -o,     --open cmd            Command to open a destination directory. 
+                                Default: 'subl .'.
           --no-browser          Module is not browser compatible.
           --no-git              Do not initialize a git repository.
           --no-remote           Do not initialize a remote git repository.

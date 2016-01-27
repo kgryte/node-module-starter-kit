@@ -14,6 +14,8 @@ Options:
           --repo repo           Module repository.
           --license name        License. Default: 'MIT'.
           --holder holder       Copyright author.
+  -o,     --open cmd            Command to open a destination directory. 
+                                Default: 'subl .'.
           --no-browser          Module is not browser compatible.
           --no-git              Do not initialize a git repository.
           --no-remote           Do not initialize a remote git repository.

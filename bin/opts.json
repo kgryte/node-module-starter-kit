@@ -8,7 +8,8 @@
 		"cmd",
 		"repo",
 		"license",
-		"holder"
+		"holder",
+		"open"
 	],
 	"boolean": [
 		"help",
@@ -31,6 +32,9 @@
 		],
 		"description": [
 			"desc"
+		],
+		"open": [
+			"o"
 		]
 	}
 }

@@ -27,13 +27,13 @@ TODO
 	- 	`--dirs=lib,test,benchmark`
 4. document a `task` factory `function` and how to manipulate task order
 5. tests
-6. 
+6. cli snippet
+7. 
 
 
 // TODO: include git remote task
 // TODO: include ci task
 // TODO: include star task
-// TODO: include open task
 
 
 

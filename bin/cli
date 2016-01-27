@@ -113,6 +113,8 @@ if ( args.hasOwnProperty( 'no-install' ) ) {
 }
 if ( args.hasOwnProperty( 'no-open' ) ) {
 	opts.open = false;
+} else if ( args.open ) {
+	opts.open = args.open;
 }
 if ( args.hasOwnProperty( 'silent' ) ) {
 	opts.silent = true;

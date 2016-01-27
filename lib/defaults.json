@@ -14,6 +14,6 @@
 	"star": true,
 	"ci": true,
 	"install": true,
-	"open": true,
+	"open": "subl .",
 	"silent": false
 }
