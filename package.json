@@ -64,6 +64,7 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "pkginfo": "^0.3.1",
+    "shelljs": "^0.5.3",
     "update-notifier": "^0.6.0",
     "utils-copy": "^1.1.0",
     "validate.io-boolean-primitive": "^1.0.0",
