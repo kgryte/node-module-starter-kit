@@ -18,6 +18,7 @@
 		"no-remote",
 		"no-star",
 		"no-ci",
+		"no-install",
 		"no-open",
 		"silent"
 	],

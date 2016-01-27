@@ -27,8 +27,7 @@ TODO
 	- 	`--dirs=lib,test,benchmark`
 4. document a `task` factory `function` and how to manipulate task order
 5. tests
-6. add `install` to opts
-7. 
+6. 
 
 
 // TODO: include git remote task

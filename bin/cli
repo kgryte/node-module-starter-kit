@@ -96,9 +96,6 @@ if ( args.holder ) {
 if ( args.hasOwnProperty( 'no-browser' ) ) {
 	opts.browser = false;
 }
-if ( args.hasOwnProperty( 'no-open' ) ) {
-	opts.open = false;
-}
 if ( args.hasOwnProperty( 'no-git' ) ) {
 	opts.git = false;
 }
@@ -110,6 +107,12 @@ if ( args.hasOwnProperty( 'no-star' ) ) {
 }
 if ( args.hasOwnProperty( 'no-ci' ) ) {
 	opts.ci = false;
+}
+if ( args.hasOwnProperty( 'no-install' ) ) {
+	opts.install = false;
+}
+if ( args.hasOwnProperty( 'no-open' ) ) {
+	opts.open = false;
 }
 if ( args.hasOwnProperty( 'silent' ) ) {
 	opts.silent = true;

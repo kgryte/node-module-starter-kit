@@ -50,6 +50,7 @@ The function accepts the following `options`:
 *	__remote__: `boolean` indicating whether to create a remote Github repository. Default: `true`.
 *	__star__: `boolean` indicating whether to star a remote Github repository. Default: `true`.
 *	__ci__: `boolean` indicating whether to initialize continuous integration. Default: `true`.
+* 	__install__: `boolean` indicating whether to run installation tasks. Default: `true`.
 *	__open__: `boolean` indicating whether to open the module directory in a text editor. Default: `true`. 	
 *	__silent__: `boolean` indicating whether to silence verbose logging. Default: `false`.
 
@@ -152,6 +153,7 @@ Options:
           --no-remote           Do not initialize a remote git repository.
           --no-star             Do not star the remote git repository.
           --no-ci               Do not initialize continuous integration.
+          --no-install          Do not run installation tasks.
           --no-open             Do not open module directory in a text editor.
           --silent              Do not display verbose logging.
 ```
