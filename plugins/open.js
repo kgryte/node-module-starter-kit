@@ -31,7 +31,7 @@ function open( logger ) {
 		var out;
 
 		if ( options.open === false ) {
-			return clbk();
+			return process.nextTick( clbk );
 		}
 		opts = {};
 		opts.silent = options.silent;

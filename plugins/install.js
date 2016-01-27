@@ -31,7 +31,7 @@ function install( logger ) {
 		var out;
 
 		if ( options.install === false ) {
-			return clbk();
+			return process.nextTick( clbk );
 		}
 		opts = {};
 		opts.silent = options.silent;

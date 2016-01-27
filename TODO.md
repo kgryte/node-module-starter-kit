@@ -22,7 +22,7 @@ TODO
 	- 	`--file TODO --file makefile`
 	-	`--files="TODO,makefile"
 	- 	`--dirs=lib,test,benchmark`
-4. document a `task` factory `function` and how to manipulate task order
+4. document a `task` factory `function` (plugin) and how to manipulate task order
 5. tests
 6. cli snippet
 7. tasks are essentially `plugins`

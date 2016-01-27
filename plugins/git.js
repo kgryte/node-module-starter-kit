@@ -31,7 +31,7 @@ function git( logger ) {
 		var out;
 
 		if ( options.git === false ) {
-			return clbk();
+			return process.nextTick( clbk );
 		}
 		opts = {};
 		opts.silent = options.silent;
@@ -83,7 +83,7 @@ function git( logger ) {
 		shell.cd( dir );
 
 		log( 'Successfully initialized a local git repository.' );
-		clbk();
+		process.nextTick( clbk );
 	}; // end FUNCTION init()
 } // end FUNCTION git()
 
