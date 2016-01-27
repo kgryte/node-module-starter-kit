@@ -25,7 +25,9 @@ TODO
 	- 	`--file TODO --file makefile`
 	-	`--files="TODO,makefile"
 	- 	`--dirs=lib,test,benchmark`
-4. 
+4. document a `task` factory `function` and how to manipulate task order
+5. tests
+6. 
 
 
 
