@@ -16,9 +16,9 @@
     "nodemodule": "./bin/cli"
   },
   "scripts": {
-    "test": "mocha",
-    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
-    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+    "test": "tape \"./test/*.js\"",
+    "test-cov": "istanbul cover --dir ./reports/coverage --report lcov tape -- \"./test/*.js\"",
+    "coverage": "istanbul cover --dir ./reports/codecov/coverage --report lcovonly tape -- \"./test/*.js\" && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
   },
   "main": "./lib",
   "repository": {
@@ -44,24 +44,25 @@
     "url": "https://github.com/kgryte/node-module-starter-kit/issues"
   },
   "dependencies": {
-    "@kgryte/editorconfig": "^1.0.0",
-    "@kgryte/gitattributes": "^1.0.0",
-    "@kgryte/gitignore": "^1.0.0",
-    "@kgryte/jshintignore": "^1.0.0",
-    "@kgryte/jshintrc": "^1.0.0",
-    "@kgryte/license": "^1.0.0",
-    "@kgryte/makefile": "^1.0.0",
+    "@kgryte/editorconfig": "^1.0.3",
+    "@kgryte/gitattributes": "^1.0.3",
+    "@kgryte/gitignore": "^1.0.4",
+    "@kgryte/jshintignore": "^1.0.3",
+    "@kgryte/jshintrc": "^1.0.3",
+    "@kgryte/license": "^1.0.1",
+    "@kgryte/makefile": "^2.0.4",
     "@kgryte/noop": "^1.0.0",
-    "@kgryte/npmignore": "^1.0.0",
-    "@kgryte/package-json": "^1.0.1",
-    "@kgryte/readme": "^1.0.3",
-    "@kgryte/todo": "^1.0.0",
-    "@kgryte/travis-yml": "^1.0.0",
-    "minimist": "^1.1.2",
-    "mkdirp": "^0.5.1",
-    "pkginfo": "^0.3.0",
-    "update-notifier": "^0.5.0",
-    "utils-merge2": "^1.0.0",
+    "@kgryte/npmignore": "^1.0.4",
+    "@kgryte/package-json": "^2.0.4",
+    "@kgryte/readme": "^2.0.0",
+    "@kgryte/todo": "^1.0.3",
+    "@kgryte/travis-yml": "^1.0.7",
+    "debug": "^2.2.0",
+    "minimist": "^1.2.0",
+    "pkginfo": "^0.3.1",
+    "update-notifier": "^0.6.0",
+    "utils-copy": "^1.1.0",
+    "validate.io-boolean-primitive": "^1.0.0",
     "validate.io-email-address": "^1.0.0",
     "validate.io-function": "^1.0.2",
     "validate.io-object": "^1.0.4",
@@ -69,12 +70,13 @@
     "validate.io-string-primitive": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "3.x.x",
-    "codecov.io": "^0.1.5",
-    "istanbul": "^0.3.0",
+    "codecov": "1.x.x",
+    "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
-    "mocha": "2.x.x"
+    "mkdirp": "^0.5.1",
+    "tap-spec": "4.x.x",
+    "tape": "4.x.x"
   },
   "license": "MIT"
 }

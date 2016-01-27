@@ -3,15 +3,23 @@ Usage: nodemodule [options] [destination]
 
 Options:
 
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --name [name]         Module name.
-  -desc  --description [desc]  Module description.
-         --author [author]     Module author.
-         --email [email]       Author email.
-         --keywords [keywords] Keywords describing the module; e.g., word1,word2,...
-         --cmd [cmd]           Command, if module is a CLI tool.
-         --repo [repo]         Module repository.
-         --license [name]      License. Default: 'MIT'.
-         --holder [holder]     Copyright author.
+  -h,     --help                Print this message.
+  -V,     --version             Print the package version.
+          --name name           Module name.
+  -desc,  --description desc    Module description.
+          --author author       Module author.
+          --email email         Author email.
+          --keywords keywords   Keywords describing module; e.g., word1,word2,...
+          --cmd cmd             Command-line interface command.
+          --repo repo           Module repository.
+          --license name        License. Default: 'MIT'.
+          --holder holder       Copyright author.
+          --no-browser          Module is not browser compatible.
+          --no-git              Do not initialize a git repository.
+          --no-remote           Do not initialize a remote git repository.
+          --no-star             Do not star the remote git repository.
+          --no-ci               Do not initialize continuous integration.
+          --no-open             Do not open module directory in a text editor.
+          --silent              Do not display verbose logging.
+
 

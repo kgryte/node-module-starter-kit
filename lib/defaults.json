@@ -7,5 +7,12 @@
 	"cmd": "",
 	"repo": "",
 	"license": "MIT",
-	"holder": ""
+	"holder": "",
+	"browser": true,
+	"git": true,
+	"remote": true,
+	"star": true,
+	"ci": true,
+	"open": true,
+	"silent": false
 }

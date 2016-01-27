@@ -3,20 +3,20 @@
 
 // MODULES //
 
-var fs = require( 'fs' ),
-	path = require( 'path' ),
-	pkginfo = require( 'pkginfo' ),
-	parseArgs = require( 'minimist' ),
-	notifier = require( 'update-notifier' ),
-	opts = require( './opts.json' ),
-	cp = require( './../lib' );
+var fs = require( 'fs' );
+var path = require( 'path' );
+var pkginfo = require( 'pkginfo' );
+var parseArgs = require( 'minimist' );
+var notifier = require( 'update-notifier' );
+var opts = require( './opts.json' );
+var starter = require( './../lib' );
 
 
 // VARIABLES //
 
-var args,
-	dest,
-	pkg;
+var args;
+var dest;
+var pkg;
 
 
 // INIT //
@@ -43,7 +43,7 @@ args = parseArgs( process.argv.slice( 2 ), opts );
 // HELP //
 
 function onClose() {
-	process.exit( 1 );
+	process.exit( 0 );
 }
 
 if ( args.help ) {
@@ -62,48 +62,81 @@ if ( args.version ) {
 }
 
 
-// COPY //
+// OPTIONS //
 
-function onCopy( error ) {
-	if ( error ) {
-		throw error;
-	}
-}
 opts = {};
 
-if ( args.hasOwnProperty( 'name' ) ) {
+if ( args.name ) {
 	opts.name = args.name;
 }
-if ( args.hasOwnProperty( 'description' ) ) {
-	opts.desc = args.desc;
+if ( args.description ) {
+	opts.desc = args.description;
 }
-if ( args.hasOwnProperty( 'author' ) ) {
+if ( args.author ) {
 	opts.author = args.author;
 }
-if ( args.hasOwnProperty( 'email' ) ) {
+if ( args.email ) {
 	opts.email = args.email;
 }
-if ( args.hasOwnProperty( 'keywords' ) ) {
+if ( args.keywords ) {
 	opts.keywords = args.keywords.split( ',' );
 }
-if ( args.hasOwnProperty( 'cmd' ) ) {
+if ( args.cmd ) {
 	opts.cmd = args.cmd;
 }
-if ( args.hasOwnProperty( 'repo' ) ) {
+if ( args.repo ) {
 	opts.repo = args.repo;
 }
-if ( args.hasOwnProperty( 'license' ) ) {
+if ( args.license ) {
 	opts.license = args.license;
 }
-if ( args.hasOwnProperty( 'holder' ) ) {
+if ( args.holder ) {
 	opts.holder = args.holder;
 }
+if ( args.hasOwnProperty( 'no-browser' ) ) {
+	opts.browser = false;
+}
+if ( args.hasOwnProperty( 'no-open' ) ) {
+	opts.open = false;
+}
+if ( args.hasOwnProperty( 'no-git' ) ) {
+	opts.git = false;
+}
+if ( args.hasOwnProperty( 'no-remote' ) ) {
+	opts.remote = false;
+}
+if ( args.hasOwnProperty( 'no-star' ) ) {
+	opts.star = false;
+}
+if ( args.hasOwnProperty( 'no-ci' ) ) {
+	opts.ci = false;
+}
+if ( args.hasOwnProperty( 'silent' ) ) {
+	opts.silent = true;
+}
+
+
+// STARTER //
 
 if ( args._.length ) {
 	dest = args._[ 0 ];
 } else {
 	dest = process.cwd();
 }
-cp( dest, opts, onCopy );
+starter( dest, opts, done );
+
+/**
+* FUNCTION: done( [error] )
+*	Callback invoked after completing tasks.
+*
+* @private
+* @param {Error} [error] - error
+* @returns {Void}
+*/
+function done( error ) {
+	if ( error ) {
+		throw error;
+	}
+}
 
 

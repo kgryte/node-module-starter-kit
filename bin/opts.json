@@ -12,7 +12,14 @@
 	],
 	"boolean": [
 		"help",
-		"version"
+		"version",
+		"no-browser",
+		"no-git",
+		"no-remote",
+		"no-star",
+		"no-ci",
+		"no-open",
+		"silent"
 	],
 	"alias": {
 		"help": [
