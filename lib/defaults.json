@@ -13,6 +13,7 @@
 	"remote": true,
 	"star": true,
 	"ci": true,
+	"install": true,
 	"open": true,
 	"silent": false
 }
